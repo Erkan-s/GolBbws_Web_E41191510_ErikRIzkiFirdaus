@@ -15,4 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+//Route::get('user', 'ManagementUserController@index');
+Route::resource('user', 'ManagementUserController');
 });
